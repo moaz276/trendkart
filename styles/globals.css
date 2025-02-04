@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3; /* رمادي فاتح */
+  direction: rtl; /* النص من اليمين لليسار */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* تنسيقات الشريط العلوي */
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  direction: ltr;
+}
+
+.navbar .logo {
+  color: #f97316; /* برتقالي */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-box {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  direction: rtl;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* تنسيقات قسم العروض */
+.offers-section {
+  /*background-color: #f97315; 
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  */
+  background-color: #f97316; /* البرتقالي المكافئ لـ bg-orange-500 */
+  color: white; /* لون النص */
+  padding: 0.5rem; /* تعادل p-6 (6 * 0.25rem = 1.5rem) */
+  border-radius: 0.75rem; /* تعادل rounded-xl */
+  text-align: center; /* تعادل text-center */
+  /*margin-bottom: 1.5rem; /* تعادل mb-6 */
+  margin: 1.5rem;
+}
+
+/* تنسيقات قسم الفئات */
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.category {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
