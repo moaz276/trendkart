@@ -1,14 +1,16 @@
+import Link from 'next/link';
+
 const Navbar = () => {
-    return (
-      <div className="navbar">
-        <div className="logo">TrendKart</div>
-        <input type="text" className="search-box" placeholder="ابحث هنا..." />
-        <div className="icons">
-          <span className="icon">👤</span> {/* أيقونة الحساب */}
-          <span className="icon">🛒</span> {/* أيقونة السلة */}
-        </div>
+  return (
+    <div className="navbar">
+      <div className="logo">TrendKart</div>
+      <input type="text" className="search-box" placeholder="ابحث هنا..." />
+      <div className="icons">
+        <Link href="/auth/login">👤</Link>
+        <Link href="/cart">🛒</Link>
       </div>
-    );
-  };
-  
-  export default Navbar;
+    </div>
+  );
+};
+
+export default Navbar;
